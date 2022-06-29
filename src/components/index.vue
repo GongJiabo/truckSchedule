@@ -244,18 +244,20 @@
               <el-icon ><document /></el-icon>
               <span>通讯菜单</span>
             </template>
-            <el-menu-item index="3-1">下发短信</el-menu-item>
-            <el-menu-item index="3-2">通讯状态</el-menu-item>
-            <el-menu-item index="3-3">下发基础信息</el-menu-item>
-            <el-menu-item index="3-4">请示自动回复</el-menu-item>
+
+            <!--jbgong added:-->
+            <el-menu-item index="/controlMenu/sendMessage">下发短信</el-menu-item>
+            <el-menu-item index=“/controlMenu/comState>通讯状态</el-menu-item>
+            <el-menu-item index="/controlMenu/sendBasic">下发基础信息</el-menu-item>
+            <el-menu-item index="/controlMenu/autoReply">请示自动回复</el-menu-item>
           </el-sub-menu>
           <el-sub-menu index="4">
             <template #title>
               <el-icon ><setting /></el-icon>
               <span>系统维护</span>
             </template>
-            <el-menu-item index="4-1">用户信息设置</el-menu-item>
-            <el-menu-item index="4-2">车辆管理</el-menu-item>
+            <el-menu-item index="/controlMenu/userConfig">用户信息设置</el-menu-item>
+            <el-menu-item index="/controlMenu/truckManage">车辆管理</el-menu-item>
           </el-sub-menu>
         </el-menu>
       </div>
